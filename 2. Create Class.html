@@ -1,0 +1,35 @@
+<!--
+    x.className = "name"
+    x.classList
+    x.classList.add('name')
+    x.classList.replace('old', 'new')
+    x.classList.remove('name')
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Class</title>
+</head>
+<body>
+    <h1>Hello JavaScript</h1>
+    <script>
+        h1 = document.querySelector('h1')
+
+        //  give a class
+        h1.className = "header"
+        
+        // return DOMTokenList
+        l = h1.classList
+        
+        h1.classList.add("demot")
+        
+        h1.classList.replace('demot', 'demo')
+        
+        h1.classList.remove('demo')
+        
+        h1.removeAttribute('class')
+        
+    </script>
+</body>
+</html>

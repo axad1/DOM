@@ -1,0 +1,48 @@
+When a web page has loaded
+When an image has been loaded
+When the mouse moves over an element
+When an input field is changed
+When an HTML form is submitted
+When a user strokes a key
+
+------------------
+
+onmouseover:    over the html element 
+onmouseout:     out of the html element
+onmousedown:    mouse clicked
+onmouseup:      mouse released
+onclick:        mouse click complete
+
+onload:     user enters the page
+onunload:   user leaves the page
+
+onchange:   changes the content
+onfocus:
+
+------------------
+
+HTML Event as Attributes
+<button onclick="myFunc()">Try it</button>
+
+Assign Events Using the HTML DOM
+document.getElementById("id").onclick = myFunc;
+
+
+Event propagation 2 types
+bubbling : inner most first then outer : false
+capturing : outer most first then inner : true
+The default value is false, which will use the bubbling propagation
+
+------------------
+Add Event Listener
+element.addEventListener(event, function, useCapture);
+
+Remove Event Listener
+element.removeEventListener(event, function)
+
+------------------
+Add an Event Handler to the window Object
+window.addEventListener("resize", function(){
+  document.getElementById("demo").innerHTML = sometext;
+});
+

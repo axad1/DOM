@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <input type="text" autofocus placeholder="task">
+        <button>Add</button>
+        <ul></ul>
+        <script>
+            list = document.querySelector("ul")
+            document.querySelector("button").addEventListener("click", ()=>{
+                li = document.createElement("li")
+                li.innerText = document.querySelector("input").value
+                list.appendChild(li)
+            })
+        </script>
+    </body>
+</html>

@@ -1,0 +1,55 @@
+<!-- /*
+document.createElement(element)
+
+document.appendChild(element)
+document.removeChild(element)
+
+document.replaceChild(new, old)
+container.replaceChildren(...arrayOfNewChildren)
+
+container.replaceChildren()     // these will remove all childs
+container.textContent = null
+
+document.write(text)
+
+
+
+*/ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Create Element</title>
+</head>
+<body>
+    <script>
+        document.write("<h1></h1")
+        h1 = document.getElementsByTagName("h1")[0]
+        text = document.createTextNode("WELCOME")
+        h1.appendChild(text)
+
+        ul = document.createElement('ul')
+        document.body.appendChild(ul);
+
+        // method 1
+        ul.innerHTML = "<li>one</li>";
+
+        // method 2
+        li = document.createElement('li')
+        li.innerText = "two"
+        ul.appendChild(li)
+
+        // method 3
+        li = document.createElement('li')
+        text = document.createTextNode('Three')
+        li.appendChild(text)
+        ul.appendChild(li)
+
+        // method 4
+        li = document.createElement('li')
+        li.textContent = "four method"
+        li.className = "header"
+        ul.appendChild(li)
+
+    </script>
+</body>
+</html>

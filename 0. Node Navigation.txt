@@ -1,0 +1,11 @@
+Navigating Between Nodes
+You can use the following node properties to navigate between nodes with JavaScript:
+
+parentNode
+childNodes[nodenumber]
+firstChild
+lastChild
+nextSibling
+previousSibling
+
+nodeValue

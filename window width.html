@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Window Width Tracker</title>
+</head>
+<body>
+    <h1 id="root"></h1>
+</body>
+    <script>
+        root = document.getElementById('root')
+        root.innerText = window.innerWidth
+        window.onresize = ()=> root.innerText = window.innerWidth
+    </script>
+</html>

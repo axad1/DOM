@@ -1,0 +1,37 @@
+document.documentElement    full document
+
+getting
+document.getElementById(id)
+document.getElementsByTagName(name)
+document.getElementsByClassName(name)
+
+getting
+querySelector()
+querySelectorAll()
+document.forms["id"]
+
+changing
+element.innerHTML =  new html content
+element.attribute = new value
+element.setAttribute(attribute, value)
+element.style.property = new style
+
+adding
+document.createElement(element)
+document.removeChild(element)
+document.appendChild(element)
+document.replaceChild(new, old)
+document.write(text)
+
+adding event handler
+document.getElementById(id).onclick = function(){code}
+
+---------------------
+The nodeName Property
+The nodeName property specifies the name of a node.
+
+nodeName is read-only
+nodeName of an element node is the same as the tag name
+nodeName of an attribute node is the attribute name
+nodeName of a text node is always #text
+nodeName of the document node is always #document
