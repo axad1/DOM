@@ -1,17 +1,18 @@
 document.documentElement    full document
 
-getting
+get elements
 document.getElementById(id)
 document.getElementsByTagName(name)
 document.getElementsByClassName(name)
 
-getting
 querySelector()
 querySelectorAll()
-document.forms["id"]
+document.forms[index|id|name]
 
 changing
 element.innerHTML =  new html content
+element.textContent = content
+
 element.attribute = new value
 element.setAttribute(attribute, value)
 element.style.property = new style

@@ -1,0 +1,14 @@
+The getElementsByTagName() Method
+
+The getElementsByClassName() Method
+
+The children Property
+
+are used to get HTML Collections.
+
+
+Properties and Methods
+
+length
+item()
+namedItem()
