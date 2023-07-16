@@ -1,31 +1,88 @@
+
 document.documentElement    full document
+document.head
+document.body
 
-get elements
-document.getElementById(id)
-document.getElementsByTagName(name)
-document.getElementsByClassName(name)
-
+document.getElementById()
 querySelector()
-querySelectorAll()
-document.forms[index|id|name]
+document.getElementsByTagName()			(HTML Collections)
+document.getElementsByClassName()		(HTML Collections)
+querySelectorAll()						(NodeList)
+document.forms							(HTML Collections)
 
-changing
-element.innerHTML =  new html content
-element.textContent = content
+---> Types
+document.body.nodeType === document.ELEMENT_NODE
+document.body.nodeType === document.TEXT_NODE
 
-element.attribute = new value
-element.setAttribute(attribute, value)
-element.style.property = new style
+---> Create Element
 
-adding
-document.createElement(element)
-document.removeChild(element)
-document.appendChild(element)
-document.replaceChild(new, old)
-document.write(text)
+element.createElement(element)
+element.createTextNode("text")
+element.appendChild(element)
+element.appendData("data")
+element.prepend(elem)
+element.insertBefore(new, document.getElementById("existed")
+element.insertAdjacentHTML("beforebegin|afterbegin|beforeend|afterend", newElement)
+
+
+element.replaceChild(new, old)
+element.removeChild(element)
+document.write("text")
+
+
+---> Forms
+document.forms							(HTML Collections)
+document.forms[index|name|id].elements	(HTML Collections)
+document.forms[index|name|id].elements.name
+
+
+---> Properties
+
+element.id
+element.href
+element.value
+element.length
+element.classList
+element.nodeName
+element.childNodes			(NodeList)
+element.parentNode
+element.firstChild
+element.lastChild
+element.nextSibling
+element.previousSibling
+element.style
+formElement.elements
+formElement.elements.name
+formElement.elements.name.value
+
+element.item()
+element.namedItem()
+
+element.innerHTML = ""
+element.innerText = ""
+element.textContent = ""
+element.getInnerHTML()
+
+element.attributes							(NamedNodeMap)
+element.hasAttribute("attribut")
+element.getAttribute("attribute")
+element.setAttribute("attribute", "value")
+
+element.style.property = "value"
+getComputedStyle(element)
 
 adding event handler
 document.getElementById(id).onclick = function(){code}
+
+
+---> Classes
+element.classList
+element.classList.contains("class")
+element.classList.add("class")
+element.classList.remove("class")
+
+
+
 
 ---------------------
 The nodeName Property

@@ -1,0 +1,11 @@
+--load
+window.addEventListener("load", e => {
+  console.log("The page has been loaded!");
+});
+
+
+--beforeunload
+window.addEventListener("beforeunload", e => {
+  console.log("The page has been unloaded!");
+  return "The page has been unloaded!";
+});
